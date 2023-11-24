@@ -1,23 +1,18 @@
+<script setup>
+import { RouterView } from 'vue-router'
+import TopNav from './components/top-navigation.vue'
+</script>
+
 <template>
   <v-app>
+    <TopNav />
     <v-main>
-      <HelloWorld/>
+      <RouterView />
     </v-main>
   </v-app>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<style>
 
-export default {
-  name: 'App',
 
-  components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
-}
-</script>
+</style>
