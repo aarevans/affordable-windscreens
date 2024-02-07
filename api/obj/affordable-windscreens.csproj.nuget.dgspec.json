@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Repos\\Personal\\affordable-windscreens\\affordable-windscreens-api\\affordable-windscreens\\affordable-windscreens.csproj": {}
+  },
+  "projects": {
+    "C:\\Repos\\Personal\\affordable-windscreens\\affordable-windscreens-api\\affordable-windscreens\\affordable-windscreens.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\Personal\\affordable-windscreens\\affordable-windscreens-api\\affordable-windscreens\\affordable-windscreens.csproj",
+        "projectName": "affordable-windscreens",
+        "projectPath": "C:\\Repos\\Personal\\affordable-windscreens\\affordable-windscreens-api\\affordable-windscreens\\affordable-windscreens.csproj",
+        "packagesPath": "C:\\Users\\EvansA\\.nuget\\packages\\",
+        "outputPath": "C:\\Repos\\Personal\\affordable-windscreens\\affordable-windscreens-api\\affordable-windscreens\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EvansA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://icelandfoodsltd.pkgs.visualstudio.com/_packaging/Integration/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Sdk.Functions": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
