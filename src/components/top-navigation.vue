@@ -2,9 +2,9 @@
   <v-app-bar app color="indigo" dark scroll-behavior="collapse">
     <v-spacer></v-spacer> <!-- Spacer before buttons -->
 
-    <v-btn text>Home</v-btn>
-    <v-btn text>About</v-btn>
-    <v-btn text>Contact</v-btn>
+    <router-link to="/" tag="v-btn" text>Home</router-link>
+    <router-link to="/about" tag="v-btn" text>About</router-link>
+    <router-link to="/contact" tag="v-btn" text>Contact</router-link>
 
     <v-spacer></v-spacer> <!-- Spacer after buttons -->
   </v-app-bar>
