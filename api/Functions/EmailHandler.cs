@@ -15,7 +15,7 @@ namespace affordable_windscreens.Functions
     {
         [FunctionName("EmailHandler")]
         public static async Task<IActionResult> Run(
-        [HttpTrigger(AuthorizationLevel.Function, "post", Route = "email")] HttpRequest req,
+        [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "email")] HttpRequest req,
         ILogger log)
         {
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
