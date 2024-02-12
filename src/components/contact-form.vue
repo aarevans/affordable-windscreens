@@ -50,7 +50,7 @@
       async sendEmail() {
         const formData = { name: this.name, email: this.email, message: this.message };
         try {
-            const response = await fetch('/api/email', {
+            const response = await fetch('https://fun-affordable-windscreens.azurewebsites.net/api/email?KcB-VS90BkA3ZEEdsjWru77OF-tX-m6yZv0n24u0SkPjAzFu6zvnPg==', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
