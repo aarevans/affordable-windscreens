@@ -38,5 +38,5 @@ jobs:
         with:
           app-name: 'fun-affordable-windscreens'
           slot-name: 'Production'
-          package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
+          package: '/api/${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3A55AED045C44E94812D3BB2CF84A02B }}
