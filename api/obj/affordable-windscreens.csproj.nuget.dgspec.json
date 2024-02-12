@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj": {}
+    "c:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj": {
+    "c:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj",
+        "projectUniqueName": "c:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj",
         "projectName": "affordable-windscreens",
-        "projectPath": "C:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj",
+        "projectPath": "c:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj",
         "packagesPath": "C:\\Users\\EvansA\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\Personal\\affordable-windscreens\\api\\obj\\",
+        "outputPath": "c:\\Repos\\Personal\\affordable-windscreens\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EvansA\\AppData\\Roaming\\NuGet\\NuGet.Config",
