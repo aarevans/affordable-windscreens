@@ -50,7 +50,7 @@
       async sendEmail() {
         const formData = { name: this.name, email: this.email, message: this.message };
         try {
-            const response = await fetch('/api/EmailHandler', {
+            const response = await fetch('/api/email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

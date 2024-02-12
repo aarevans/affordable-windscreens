@@ -24,4 +24,8 @@ pnpm-debug.log*
 *.vsidx
 *.cache
 *.editorconfig
+*.v2
+*.bin
+*.dll
+
 
