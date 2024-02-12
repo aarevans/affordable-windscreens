@@ -1,4 +1,5 @@
 <script setup>
+import Contact from './components/contact-form.vue'
 
 </script>
 
@@ -8,6 +9,7 @@
       <h1 class="text-center">Home</h1>
     </header>
     <main>
+      <Contact />
       <p>This is a basic Vue.js landing page.</p>
     </main>
     <footer>
