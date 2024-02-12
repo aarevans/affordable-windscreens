@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t+nT3chEIFU6IKN5hmJF0EtX5SxtU/QSDgp1GNwjHaqglYjTvtaZDUW5XeXypXvdXlGMBZAvIxcYOyxrKQvnfg==",
+  "dgSpecHash": "7p5L9lDCaWL+hlq10O2JHB8kHzFfkJRFtKvYDaf5STzqHLaey6cwhNBKioOHyIHuNEHfuFFnx9Oataig2MVfLQ==",
   "success": true,
-  "projectFilePath": "c:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj",
+  "projectFilePath": "C:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EvansA\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.8\\microsoft.aspnet.webapi.client.5.2.8.nupkg.sha512",
     "C:\\Users\\EvansA\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
