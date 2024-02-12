@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\Personal\\affordable-windscreens\\affordable-windscreens-api\\affordable-windscreens\\affordable-windscreens.csproj": {}
+    "C:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\Personal\\affordable-windscreens\\affordable-windscreens-api\\affordable-windscreens\\affordable-windscreens.csproj": {
+    "C:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\Personal\\affordable-windscreens\\affordable-windscreens-api\\affordable-windscreens\\affordable-windscreens.csproj",
+        "projectUniqueName": "C:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj",
         "projectName": "affordable-windscreens",
-        "projectPath": "C:\\Repos\\Personal\\affordable-windscreens\\affordable-windscreens-api\\affordable-windscreens\\affordable-windscreens.csproj",
+        "projectPath": "C:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj",
         "packagesPath": "C:\\Users\\EvansA\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\Personal\\affordable-windscreens\\affordable-windscreens-api\\affordable-windscreens\\obj\\",
+        "outputPath": "C:\\Repos\\Personal\\affordable-windscreens\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EvansA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,10 @@
             "Microsoft.NET.Sdk.Functions": {
               "target": "Package",
               "version": "[4.2.0, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.29.1, )"
             }
           },
           "imports": [
@@ -62,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -4,10 +4,9 @@
 
 <template>
   <div id="app">
-    <header>
-      <h1 class="text-center">About</h1>
-    </header>
+    <v-spacer></v-spacer>
     <p>This is a basic Vue.js landing page.</p>
+    <v-spacer></v-spacer>
     <v-form v-model="valid">
         <v-container>
             <v-row>

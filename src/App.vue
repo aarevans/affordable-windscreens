@@ -5,7 +5,6 @@ import TopNav from './components/top-navigation.vue'
 
 <template>
   <v-app>
-    <TopNav />
     <v-main>
       <RouterView />
     </v-main>
