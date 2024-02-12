@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace affordable_windscreens.Functions
 {
-    public static class Function1
+    public static class EmailHandler
     {
         [FunctionName("EmailHandler")]
         public static async Task<IActionResult> Run(
-        [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
+        [HttpTrigger(AuthorizationLevel.Function, "post", Route = "email")] HttpRequest req,
         ILogger log)
         {
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
