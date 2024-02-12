@@ -4,6 +4,7 @@
   "bindings": [
     {
       "type": "httpTrigger",
+      "route": "email",
       "methods": [
         "post"
       ],
@@ -13,5 +14,5 @@
   ],
   "disabled": false,
   "scriptFile": "../bin/affordable-windscreens.dll",
-  "entryPoint": "affordable_windscreens.Functions.Function1.Run"
+  "entryPoint": "affordable_windscreens.Functions.EmailHandler.Run"
 }
