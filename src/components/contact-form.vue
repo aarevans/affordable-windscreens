@@ -3,17 +3,15 @@
     <!-- Placeholder for banner -->
     <v-row>
       <v-col cols="12">
-        <div style="height: 200px; background-color: grey; text-align: center; line-height: 200px;">
-          <v-img src="@/assets/banner.png"></v-img>        
-        </div>
+        <v-img :src="banner" height="125" ></v-img>        
       </v-col>
     </v-row>
 
     <!-- Text and Large Image -->
     <v-row>
       <v-col cols="12" class="text-center mb-5">
-        <h1>Welcome to Our Windscreen Repair Service</h1>
-        <p>Get your quote today!</p>
+        <h1>Welcome to AffordableWindscreens4u!</h1>
+        <p>We are a reliable windscreen repair company based in North Wales but serves North Wales, Chester and beyond! Please contact us directly on 07889177751 or fill in our contact form and someone will get back to you as soon as possible.</p>
         <!-- Adjusted Large Image Placeholder with Custom Styling -->
         <div class="image-container" style="display: inline-block; width: 30%;">
           <v-img
@@ -80,6 +78,8 @@
 </template>
 
 <script>
+import banner from '../assets/banner.png'
+
 export default {
   data: () => ({
     dialog: false,
