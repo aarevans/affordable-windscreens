@@ -3,7 +3,7 @@
     <!-- Placeholder for banner -->
     <v-row>
       <v-col cols="12">
-        <v-img :src="banner" height="125" ></v-img>        
+        <img src='../assets/banner.png' height="250" style="display: block; margin-left: auto; margin-right: auto; text-align: center;">
       </v-col>
     </v-row>
 
@@ -78,52 +78,51 @@
 </template>
 
 <script>
-import banner from '../assets/banner.png'
 
-export default {
-  data: () => ({
-    dialog: false,
-    valid: true,
-    name: '',
-    email: '',
-    message: '',
-    rules: {
-      required: value => !!value || 'Required.',
-      email: value => {
-        const pattern = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/;
-        return pattern.test(value) || 'Invalid e-mail.';
+  export default {
+    data: () => ({
+      dialog: false,
+      valid: true,
+      name: '',
+      email: '',
+      message: '',
+      rules: {
+        required: value => !!value || 'Required.',
+        email: value => {
+          const pattern = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/;
+          return pattern.test(value) || 'Invalid e-mail.';
+        },
       },
-    },
-  }),
-  methods: {
-    submitForm() {
-      if (this.$refs.form.validate()) {
-        console.log('Form submitted', { name: this.name, email: this.email,phone: this.phone, message: this.message });
-        this.sendEmail();
-        this.dialog = false; // Close the dialog on successful submission
+    }),
+    methods: {
+      submitForm() {
+        if (this.$refs.form.validate()) {
+          console.log('Form submitted', { name: this.name, email: this.email,phone: this.phone, message: this.message });
+          this.sendEmail();
+          this.dialog = false; // Close the dialog on successful submission
+        }
+      },
+        async sendEmail() {
+          const formData = { name: this.name, email: this.email, phone: this.phone, message: this.message };
+          try {
+              const response = await fetch('https://fun-affordable-windscreens.azurewebsites.net/api/email?', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(formData),
+              });
+              if (response.ok) {
+              // Handle success
+              console.log('Email sent successfully');
+              } else {
+              // Handle error
+              console.error('Failed to send email');
+              }
+          } catch (error) {
+              console.error('Error sending email:', error);
+          }}
       }
-    },
-      async sendEmail() {
-        const formData = { name: this.name, email: this.email, phone: this.phone, message: this.message };
-        try {
-            const response = await fetch('https://fun-affordable-windscreens.azurewebsites.net/api/email?', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-            });
-            if (response.ok) {
-            // Handle success
-            console.log('Email sent successfully');
-            } else {
-            // Handle error
-            console.error('Failed to send email');
-            }
-        } catch (error) {
-            console.error('Error sending email:', error);
-        }}
-    }
-}
-  </script>
+  }
+</script>
   
