@@ -106,7 +106,7 @@ export default {
       async sendEmail() {
         const formData = { name: this.name, email: this.email, phone: this.phone, message: this.message };
         try {
-            const response = await fetch('https://fun-affordable-windscreens.azurewebsites.net/api/email?', {
+            const response = await fetch('/api/email?', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
