@@ -2,20 +2,22 @@
   <v-container>
     <!-- Placeholder for banner -->
     <v-row>
-      <v-col cols="12">
-        <img src='../assets/banner.png' height="320" style="display: block; margin-left: auto; margin-right: auto; text-align: center;">
-      </v-col>
+      <div class="banner-container">
+        <img src="../assets/banner.png" alt="Banner" class="banner-image">
+      </div>
     </v-row>
 
     <!-- Text and Large Image -->
     <v-row align="center" justify="center">
-        <v-col cols="12" md="6" class="px-md-1">
-          <img src='../assets/van.png' height="500" style="display: inline; margin-left: auto; margin-right: auto;">
-        </v-col>
-        <v-col cols="12" md="6" class="px-md-1">
-          <h1>Welcome to AffordableWindscreens4u!</h1>
-          <p>We are a reliable windscreen repair company based in North Wales but serves North Wales, Chester and beyond! Please contact us directly on 07889177751 or fill in our contact form and someone will get back to you as soon as possible.</p>
-        </v-col>
+      <div class="content">
+      <div class="image-container">
+        <img src="../assets/van.png" alt="Van Image" class="responsive-image">
+      </div>
+      <div class="text-container">
+        <h1>Welcome to Our Service</h1>
+        <p>Here is some information about the van and the services we offer. Please contact us for more details.</p>
+      </div>
+    </div>
     </v-row>
 
     <!-- Button to Open Contact Form Dialog -->
@@ -122,4 +124,63 @@
       }
   }
 </script>
+
+<style>
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-container {
+  flex: 1 1 300px; /* Allows the image container to grow and shrink but not be smaller than 300px */
+  max-width: 50%; /* Limits the image container's width to half of the parent container */
+  padding: 10px; /* Adds some space around the image */
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.text-container {
+  flex: 1 1 300px; /* Allows the text container to grow and shrink but not be smaller than 300px */
+  max-width: 50%; /* Limits the text container's width to half of the parent container */
+  padding: 10px; /* Adds some space around the text */
+}
+
+.banner-container {
+  width: 100%; /* Ensures the container spans the full width */
+  overflow: hidden; /* Hides parts of the image that overflow the container */
+  display: flex; /* Aligns the child img */
+  justify-content: center; /* Centers the img horizontally */
+}
+
+.banner-image {
+  width: 100%; /* Makes the image fully responsive */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Covers the area of the container without stretching. Can crop edges on smaller screens */
+  min-width: 300px; /* Minimum width to prevent the image from becoming too small */
+}
+
+@media (max-width: 600px) { /* Adjusts the layout for screens smaller than 600px */
+  .content {
+    flex-direction: column; /* Stacks the image and text vertically */
+  }
+
+  .image-container, .text-container {
+    max-width: 100%; /* Allows the image and text containers to fill the entire width of the parent container */
+  }
+
+  .responsive-image {
+    max-height: 200px; /* Optionally limits the image height on smaller screens */
+  }
+  
+  .banner-container {
+    height: 200px; /* Sets a fixed height on smaller screens to control the appearance */
+  }
+}
+</style>
+
   
