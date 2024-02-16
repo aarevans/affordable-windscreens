@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Mailjet.Api/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Mailjet.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Mailjet.Client.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.8": {
         "type": "package",
         "dependencies": {
@@ -1166,32 +1179,6 @@
             "assetType": "native",
             "rid": "ubuntu.16.10-x64"
           }
-        }
-      },
-      "SendGrid/9.29.1": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.1",
-          "starkbank-ecdsa": "[1.3.3, 2.0.0)"
-        },
-        "compile": {
-          "lib/netstandard2.0/SendGrid.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/SendGrid.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "starkbank-ecdsa/1.3.3": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.1/StarkbankEcdsa.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/StarkbankEcdsa.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -2377,6 +2364,18 @@
     }
   },
   "libraries": {
+    "Mailjet.Api/3.0.0": {
+      "sha512": "/VeXC5+Q4e6YKcLm7yQVEJ5rBioJuXR7WVkVUVXgO/wkrd54+kGaB5/4F31iy7N4X07D97Gjxl8NlVNtcgHLsg==",
+      "type": "package",
+      "path": "mailjet.api/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/Mailjet.Client.dll",
+        "mailjet.api.3.0.0.nupkg.sha512",
+        "mailjet.api.nuspec"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.8": {
       "sha512": "dkGLm30CxLieMlUO+oQpJw77rDs0IIx/w3lIHsp+8X94HXCsUfLYuFmlZPsQDItC0O2l1ZlWeKLkZX7ZiNRekw==",
       "type": "package",
@@ -3537,45 +3536,6 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
-      ]
-    },
-    "SendGrid/9.29.1": {
-      "sha512": "A8lwx76+pdIpVS+X+DGsBjbKm9CSG98GZNLCpAzBR3jDjtm7MD7IixG1xX/hN7K9TDQfNfAEW4NhKnPY/K6bSw==",
-      "type": "package",
-      "path": "sendgrid/9.29.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/SendGrid.dll",
-        "lib/net40/SendGrid.pdb",
-        "lib/net40/SendGrid.xml",
-        "lib/net452/SendGrid.dll",
-        "lib/net452/SendGrid.pdb",
-        "lib/net452/SendGrid.xml",
-        "lib/netstandard1.3/SendGrid.dll",
-        "lib/netstandard1.3/SendGrid.pdb",
-        "lib/netstandard1.3/SendGrid.xml",
-        "lib/netstandard2.0/SendGrid.dll",
-        "lib/netstandard2.0/SendGrid.pdb",
-        "lib/netstandard2.0/SendGrid.xml",
-        "sendgrid.9.29.1.nupkg.sha512",
-        "sendgrid.nuspec"
-      ]
-    },
-    "starkbank-ecdsa/1.3.3": {
-      "sha512": "OblOaKb1enXn+dSp7tsx9yjwV+/BEKM9jFhshIkZTwCk7LuTFTp+wSon6rFzuPiIiTGtvVWQNUw2slHjGktJog==",
-      "type": "package",
-      "path": "starkbank-ecdsa/1.3.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/StarkbankEcdsa.dll",
-        "lib/net452/StarkbankEcdsa.dll",
-        "lib/netstandard1.3/StarkbankEcdsa.dll",
-        "lib/netstandard2.0/StarkbankEcdsa.dll",
-        "lib/netstandard2.1/StarkbankEcdsa.dll",
-        "starkbank-ecdsa.1.3.3.nupkg.sha512",
-        "starkbank-ecdsa.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -6975,8 +6935,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.NET.Sdk.Functions >= 4.2.0",
-      "SendGrid >= 9.29.1"
+      "Mailjet.Api >= 3.0.0",
+      "Microsoft.NET.Sdk.Functions >= 4.2.0"
     ]
   },
   "packageFolders": {
@@ -6985,11 +6945,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj",
+      "projectUniqueName": "c:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj",
       "projectName": "affordable-windscreens",
-      "projectPath": "C:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj",
+      "projectPath": "c:\\Repos\\Personal\\affordable-windscreens\\api\\affordable-windscreens.csproj",
       "packagesPath": "C:\\Users\\EvansA\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\Personal\\affordable-windscreens\\api\\obj\\",
+      "outputPath": "c:\\Repos\\Personal\\affordable-windscreens\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\EvansA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7013,19 +6973,24 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Mailjet.Api": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "Microsoft.NET.Sdk.Functions": {
             "target": "Package",
             "version": "[4.2.0, )"
-          },
-          "SendGrid": {
-            "target": "Package",
-            "version": "[9.29.1, )"
           }
         },
         "imports": [
@@ -7044,7 +7009,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
