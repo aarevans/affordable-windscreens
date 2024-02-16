@@ -3,25 +3,19 @@
     <!-- Placeholder for banner -->
     <v-row>
       <v-col cols="12">
-        <img src='../assets/banner.png' height="250" style="display: block; margin-left: auto; margin-right: auto; text-align: center;">
+        <img src='../assets/banner.png' height="320" style="display: block; margin-left: auto; margin-right: auto; text-align: center;">
       </v-col>
     </v-row>
 
     <!-- Text and Large Image -->
-    <v-row>
-      <v-col cols="12" class="text-center mb-5">
-        <h1>Welcome to AffordableWindscreens4u!</h1>
-        <p>We are a reliable windscreen repair company based in North Wales but serves North Wales, Chester and beyond! Please contact us directly on 07889177751 or fill in our contact form and someone will get back to you as soon as possible.</p>
-        <!-- Adjusted Large Image Placeholder with Custom Styling -->
-        <div class="image-container" style="display: inline-block; width: 30%;">
-          <v-img
-            src="https://via.placeholder.com/600x400"
-            aspect-ratio="1.5"
-            contain
-            style="width: 100%; height: auto;"
-          ></v-img>
-        </div>
-      </v-col>
+    <v-row align="center" justify="center">
+        <v-col cols="12" md="6" class="px-md-1">
+          <img src='../assets/van.png' height="500" style="display: inline; margin-left: auto; margin-right: auto;">
+        </v-col>
+        <v-col cols="12" md="6" class="px-md-1">
+          <h1>Welcome to AffordableWindscreens4u!</h1>
+          <p>We are a reliable windscreen repair company based in North Wales but serves North Wales, Chester and beyond! Please contact us directly on 07889177751 or fill in our contact form and someone will get back to you as soon as possible.</p>
+        </v-col>
     </v-row>
 
     <!-- Button to Open Contact Form Dialog -->
@@ -74,6 +68,9 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
+    <br />
+    <br />
+    <br />
   </v-container>
 </template>
 
