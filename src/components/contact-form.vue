@@ -14,8 +14,8 @@
         <img src="../assets/van.png" alt="Van Image" class="responsive-image">
       </div>
       <div class="text-container">
-        <h1>Welcome to Our Service</h1>
-        <p>Here is some information about the van and the services we offer. Please contact us for more details.</p>
+        <h1>Welcome to AffordableWindscreens4u!</h1>
+        <p>We are a reliable windscreen repair company based in North Wales but serves North Wales, Chester and beyond! Please contact us directly on 07889177751 or fill in our contact form and someone will get back to you as soon as possible.</p>
       </div>
     </div>
     </v-row>
@@ -176,7 +176,7 @@
   .responsive-image {
     max-height: 200px; /* Optionally limits the image height on smaller screens */
   }
-  
+
   .banner-container {
     height: 200px; /* Sets a fixed height on smaller screens to control the appearance */
   }
